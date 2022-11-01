@@ -18,11 +18,12 @@
   --marine-500: #443c44;
 }
 
-html{
+
+html, body, #__next{
   width: 100%;
+  max-width: 100%;
   height: 100%;
   background-color: rgb(17,17,17);
-
 }
 
 * {
@@ -63,6 +64,7 @@ button {
   color: var(--gray-500);
 }
 
+
 h1,
 h2,
 h3,
@@ -91,15 +93,43 @@ button {
   //background-color: var(--beige-500) !important; //change the button collor
 }
 
+
+
+//
+
 main{
+  width: 100%;
+  max-width: 100%;
+
   display: flex;
   flex-direction: column;
-  
+  height: 100vh;
 }
 
 .sidebar-main{
   display: flex;
   flex-direction: row;
-  height: calc(100vh - 5rem);
-  width: 100%;
+  height: calc(0.7*(100vh - 5rem));
+  width: 70%;
+  max-width: 800px;
+
+  align-self: center;
+
+  border: 1px solid var(--gray-800);
+ 
+  margin: auto 0;
+}
+
+*::-webkit-scrollbar{
+    width: 4px !important;
+  }
+  
+*::-webkit-scrollbar-track{
+    background: none !important;
+}
+  
+*::-webkit-scrollbar-thumb{
+    background-color: var(--gray-800) !important;
+    border-radius: 6px !important;
+  
 }

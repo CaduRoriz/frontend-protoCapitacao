@@ -13,7 +13,7 @@
     margin: auto;
     align-items: center;
     justify-content: space-between;
-
+    position: relative;
 }
 
 .title{
@@ -134,16 +134,11 @@
     }
 }
 
-.sideBar{
-    right: 0 !important;
-    transition: 0.6s !important;
-    display: flex !important;
-    
-}
 
 @media(max-width: 720px){
     .headerContainer{
-        width: 80%;
+        width: 100%;
+        padding: 0 10%;
     }
 
     .navigation{
@@ -151,11 +146,12 @@
         display: none;
         position: absolute;
         right: -100%;
-        top: 5rem;
+        top: 4rem;
         gap: 1rem;
         border-left: 1px solid rgba(177, 177, 177, 0.5);
         border-bottom: 1px solid rgba(177, 177, 177, 0.5);
         transition: 0.6s;
+        background: rgb(17, 17,17);
         
 
         .buttonNav{
@@ -188,13 +184,15 @@
 
 }
 
+.sideBar{
+    right: 0;
+    transition: 0.6s;
+    display: flex;
+    
+}
+
 @media(max-width: 540px){
     
 }
 
-@media(max-width: 360px){
-    .headerContainer{
-        width: 90%;
-    }
-}
 
