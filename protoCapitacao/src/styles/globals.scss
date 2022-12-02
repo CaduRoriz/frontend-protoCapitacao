@@ -104,9 +104,10 @@ main{
   display: flex;
   flex-direction: column;
   height: 100vh;
+  
 }
 
-.sidebar-main{
+.main-container{
   display: flex;
   flex-direction: row;
   height: calc(0.7*(100vh - 5rem));
@@ -118,6 +119,18 @@ main{
   border: 1px solid var(--gray-800);
  
   margin: auto 0;
+}
+
+@media (max-width: 540px) {
+  .main-container{
+    width: 80%;
+  }
+}
+
+@media (max-width: 360px) {
+  .main-container{
+    width: 90%;
+  }
 }
 
 *::-webkit-scrollbar{

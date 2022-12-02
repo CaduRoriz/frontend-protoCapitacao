@@ -10,11 +10,19 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.10",
+    "@react-google-maps/api": "^2.17.0",
+    "@types/react-modal": "^3.13.1",
+    "bootstrap": "^5.2.2",
+    "coordenadas-do-cep": "^1.2.0",
     "lottie": "^0.0.1",
     "next": "12.3.1",
-    "react": "^16.14.0",
-    "react-dom": "18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.0.0",
+    "react-hook-form": "^7.38.0",
     "react-lottie": "^1.2.3",
+    "react-modal": "^3.16.1",
+    "react-test-renderer": "^18.0.0",
+    "reactstrap": "^9.1.5",
     "sass": "^1.55.0"
   },
   "devDependencies": {

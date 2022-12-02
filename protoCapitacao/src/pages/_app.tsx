@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <main>
       <Header/>
       
-      <div className="sidebar-main">
+      <div className="main-container">
         <Component {...pageProps}/>
       </div>
       

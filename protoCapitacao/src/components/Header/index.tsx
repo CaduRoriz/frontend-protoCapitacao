@@ -12,26 +12,6 @@ export function Header() {
   const pathSearch = router.pathname == "/search";
   const pathContact = router.pathname == "/contact";
 
-  // const [windowSize, setWindowSize] = useState(getWindowSize())
-
-  // useEffect(() => {
-  //     function handleWindowResize(){
-  //         setWindowSize(getWindowSize());
-  //     }
-
-  //     window.addEventListener('resize', handleWindowResize);
-
-  //     return () => {
-  //         window.removeEventListener('resize', handleWindowResize)
-  //     };
-
-  // }, [])
-
-  // function getWindowSize(){
-  //     const {innerWidth, innerHeight} = window;
-  //     return {innerWidth, innerHeight}
-  // }
-
   return (
     <div className={styles.headerWrapper}>
       <div className={styles.headerContainer}>
@@ -53,14 +33,6 @@ export function Header() {
             className={`${styles.buttonNav} ${pathSearch ? styles.isPath : ""}`}
           >
             Buscar
-          </button>
-          <button
-            onClick={() => router.push("/contact")}
-            className={`${styles.buttonNav} ${
-              pathContact ? styles.isPath : ""
-            }`}
-          >
-            Contato
           </button>
         </div>
 
