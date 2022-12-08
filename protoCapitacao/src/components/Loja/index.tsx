@@ -101,7 +101,7 @@ export default function Loja(props: Company){
 
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
-        googleMapsApiKey: "AIzaSyDFFBD69EbcjfrCf8PUW73wk9R7fKmDVa4"
+        googleMapsApiKey: `${process.env.API_KEY_GOOGLE}`
       })
 
     //--------------------FIM-MODAL-----------------------------//

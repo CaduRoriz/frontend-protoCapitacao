@@ -14,6 +14,7 @@
     "@types/react-modal": "^3.13.1",
     "bootstrap": "^5.2.2",
     "coordenadas-do-cep": "^1.2.0",
+    "dotenv": "^16.0.3",
     "lottie": "^0.0.1",
     "next": "12.3.1",
     "react": "^18.2.0",
