@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:3003/",
+  baseURL: "https://api-proto-capitacao.vercel.app/",
 });
 
 export default api;
